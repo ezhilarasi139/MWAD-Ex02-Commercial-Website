@@ -1,0 +1,208 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #facc15;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* Home Section */
+.hero {
+    background: linear-gradient(120deg, #2563eb, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #facc15;
+    color: #172554;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Common Sections */
+section {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+/* Products Section - Flexbox */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 15px 0;
+}
+
+.product p {
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #f59e0b;
+    color: white;
+}
+
+/* About and Contact */
+#about, #contact {
+    background-color: white;
+    margin-top: 10px;
+}
+
+#about p, #contact p {
+    line-height: 1.8;
+}
+
+/* User Account */
+#account {
+    background-color: #e0e7ff;
+}
+
+#account button {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.social a {
+    color: #facc15;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 320px;
+    }
+}
